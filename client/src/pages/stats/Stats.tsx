@@ -84,7 +84,7 @@ const Stats = () => {
       .then((res) => console.log(res))
       .catch((err) => console.error(err));
 
-    window.location.reload();
+    setTimeout(() => window.location.reload(), 2000);
   }, [labInfo, labScore]);
 
   useEffect(() => {
