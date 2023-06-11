@@ -51,7 +51,7 @@ const Register = ({ getNameGroup, setGetGroup }: IRegister) => {
     setGetGroup("");
     dispatch(fetchRegisterUser(data));
     reset();
-    // window.location.reload();
+    setTimeout(() => window.location.reload(), 2000);
   };
 
   return (
